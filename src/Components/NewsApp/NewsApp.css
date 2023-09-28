@@ -1,0 +1,38 @@
+
+.news-app {
+    width: 80%;
+    margin-inline: auto;
+    margin-block: 40px;
+}
+.heading{
+    text-align: center;
+    font-family: monospace;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.search {
+
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 1.2rem;
+    border: 2px solid black;
+
+}
+
+.btn{
+    margin-bottom: 20px;
+    padding: 20px 60px;
+
+
+
+}
+
+.newslist{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+
+    row-gap: 20px;
+}
