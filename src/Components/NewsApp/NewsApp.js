@@ -13,7 +13,7 @@ function NewsApp() {
 
     useEffect(()=>{
         fetchData();
-    }, [query]);
+    }, []);
 
     async function fetchData(){
         try{
