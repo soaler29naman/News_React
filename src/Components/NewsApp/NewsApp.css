@@ -10,6 +10,11 @@
     font-size: 3rem;
     margin-bottom: 20px;
 }
+.btnw{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .search {
 

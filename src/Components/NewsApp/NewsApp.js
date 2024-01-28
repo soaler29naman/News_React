@@ -1,13 +1,15 @@
 import React, { useEffect, useRef, useState } from 'react'
+
 import News from '../News/News';
 import "./NewsApp.css"
+
 
 function NewsApp() {
     const apikey= "cecd5c59abea450090a9c5ec131c5b79";
     const [Newslist, setNewslist] = useState([])
     const [query, setquery] = useState('tesla')
     
-    const newsurl=`https://newsapi.org/v2/everything?q=${query}&from=2023-08-27&sortBy=publishedAt&apiKey=${apikey}`;
+    const newsurl=`https://newsapi.org/v2/everything?q=${query}&from=2023-12-28&sortBy=publishedAt&apiKey=${apikey}`;
 
     const queryInputRef= useRef(null);
 
@@ -41,8 +43,10 @@ function NewsApp() {
         <h1 className="heading">News Daily</h1>
         <form onSubmit={handleSubmit}>
             <input className="search" type="text" ref={queryInputRef} placeholder="Search"/>
-
+            <div className="btnw">
             <button className="btn" onClick={handleSubmit} >Search</button>
+
+            </div>
 
         </form>
 
